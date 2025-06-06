@@ -1,12 +1,31 @@
-# React + Vite
+# Login con Roles en React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación simple de login hecha con React y Vite que permite iniciar sesión con dos tipos de usuarios: **administrador** y **usuario normal**. Según el rol asignado, el usuario será redirigido a su respectivo dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El sistema simula la autenticación con usuarios hardcodeados, almacenando la sesión en el `localStorage`. Además, cuenta con rutas protegidas para restringir el acceso a los dashboards según el rol del usuario.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Características
+
+- Login con validación de usuario y contraseña.
+- Dos roles: `admin` y `user`.
+- Rutas protegidas con redirección automática.
+- Dashboard independiente para administrador y usuario.
+- Cierre de sesión que elimina la sesión guardada.
+- Proyecto creado con React y Vite.
+- Uso de React Router para manejo de rutas.
+
+---
+
+## Usuarios de prueba
+
+| Usuario | Contraseña | Rol       |
+|---------|------------|-----------|
+| admin   | admin123   | Administrador |
+| user    | user123    | Usuario normal |
+
+---
+
